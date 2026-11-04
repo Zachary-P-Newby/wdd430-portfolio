@@ -1,26 +1,6 @@
 //import Image from "next/image";
 import ProjectList from "./components/ProjectList";
-
-const projects = [
-  {
-    title: 'Crud Busters',
-    description: 'Top down arcade shooter based on Asteroids by Atari Inc, made in Godot for PC',
-    technologies: ['Godot', 'GDScript', 'PC'],
-    link: 'https://github.com/Zachary-P-Newby/CrudBusters'
-  },
-  {
-    title: 'Travel Coordinator',
-    description: 'Webpage that helps users coordinate taveling by providing useful travel information such as weather, flights, and European hotels',
-    technologies: ['HTML', 'JavaScript', 'CSS'],
-    link: 'https://github.com/Zachary-P-Newby/TravelCoordinatorWDD330'
-  },
-  {
-    title: 'CSE340 Service Projects Webpage',
-    description: 'Service Project webpage that helps users find service projects to volunteer for and provides information about the projects.',
-    technologies: ['HTML', 'JavaScript', 'PostgreSQL', 'Node.js', 'Express'],
-    link: 'https://github.com/Zachary-P-Newby/CSE340'
-  }
-];
+import {projects} from "../lib/projects-db";
 
 export default function Home() { 
   return (
