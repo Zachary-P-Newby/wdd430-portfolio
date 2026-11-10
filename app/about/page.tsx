@@ -1,4 +1,4 @@
-import FavouritesList from "../components/FavouritesList";
+import FavouritesList from "../../components/FavouritesList";
 
 const favouriteVideoGames = [
   "Super Mario Sunshine",
@@ -39,7 +39,7 @@ const favouriteShows =[
 export default function About() {
   return (
     <main className="mx-auto px-30 py-12 bg-blue-200 w-full min-h-screen m-0">
-      <h2 className="text-3xl font-bold mb-4">About Me</h2>
+      <h2 className="text-3xl font-bold mb-4 text-cyan-900">About Me</h2>
       <p className="text-lg text-gray-700 my-4">
         I am a full-stack and devloper and amature game devleoper. I like to play both board and video games, draw, and harassing small dogs.
         I am a proud member of the Church of Jesus Christ of Latter-Day Saints and native of Montana currently living in Missouri.

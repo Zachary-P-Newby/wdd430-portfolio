@@ -6,16 +6,16 @@ export default function Settings(){
             <h1>Settings</h1>
             <section className="bg-sky-800 px-8 py-4 rounded-lg min-h-60">
                 <article className="bg-white rounded-lg">
-                    <p>Projects
-                        Projects
-                        Projects
-                        Projects
-                        Projects
-                        Projects
-                        Projects
-                        Projects
-                        Projects
-                        Projects
+                    <p>
+                        Settings go here.
+
+
+
+
+
+
+
+                        Banana
                     </p>
                 </article>
             </section>

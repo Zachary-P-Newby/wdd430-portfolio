@@ -8,18 +8,8 @@ export async function GET(request: NextRequest) {
     //get the type parameter from the search params
     const type = searchParams.get("type");
     
-    
-    if(!type){
-        const projects = getProjects();
-        if (!projects){
-            return NextResponse.json({error: "No Projects Found"}, {status: 404})
-        }
-        return NextResponse.json({projects: projects}, {status: 200})
-    }
-    else{
-        const projects = getProjects(type);
-        return NextResponse.json({projects: projects}, {status: 200})
+    const projects = await getProjects(type);
+    return NextResponse.json({projects: projects}, {status: 200})
     }
 
-}
 
