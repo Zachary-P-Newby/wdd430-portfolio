@@ -1,4 +1,3 @@
-import { Console } from 'console';
 import ProjectCard from './ProjectCard';
 
 export interface Project {
