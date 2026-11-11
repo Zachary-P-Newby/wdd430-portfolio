@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import {getProjectById} from "../../../../lib/projects-db"
+import {fetchProjectById} from "../../../../lib/projects-db"
 
 export async function GET(
     _request: Request,
@@ -12,7 +12,7 @@ export async function GET(
     if (Number.isNaN(id)){
         return NextResponse.json({error: 'Invalid id'}, {status: 400});
     }
-    const project = await getProjectById(id);
+    const project = await fetchProjectById(id);
 
     if (!project){
         return NextResponse.json({error: "Not Found"}, {status: 404})
