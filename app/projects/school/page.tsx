@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import ProjectList from "../../../components/ProjectList";
-import { Project } from "@/lib/projects-db";
+import { Project } from "@/app/lib/projects-db";
 
 
 async function SchoolProjects(){

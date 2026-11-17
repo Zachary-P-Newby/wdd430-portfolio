@@ -8,6 +8,7 @@ export interface Project {
   type: 'opensource' | 'school';
   technologies: string[];
   link?: string;
+  yearCompleted: number;
 }
 
 const ITEMS_PER_PAGE = 2;

@@ -1,9 +1,7 @@
 //import Image from "next/image";
-import ProjectListPlaceholder from "@/components/ProjectListPlaceholder";
 import ProjectList from "../components/ProjectList";
-import { Suspense } from "react";
 
-import { Project } from "@/lib/projects-db";
+import { Project } from "@/app/lib/projects-db";
 
 const projects: Project[] = [
   {

@@ -1,6 +1,6 @@
 import ProjectCard from './ProjectCard';
 
-import { Project } from '@/lib/projects-db';
+import { Project } from '@/app/lib/projects-db';
 
 export default async function ProjectList({projects}:{projects:Project[]}) {
  

@@ -1,4 +1,5 @@
 import FavouritesList from "../../components/FavouritesList";
+import Image from "next/image";
 
 const favouriteVideoGames = [
   "Super Mario Sunshine",
@@ -53,7 +54,9 @@ export default function About() {
           <FavouritesList favouriteObjectType="Shows" favourites={favouriteShows} />
         </div>
         
-
+        <div className="flex justify-center my-4  py-4 ">
+          <Image className="border-10 border-white rounded-sm" src="/Emerald_Hill_Reimagined.png" alt="Emerald Hill Reimagined" width={500} height={500} />
+        </div>
       </section>
       
     </main>
