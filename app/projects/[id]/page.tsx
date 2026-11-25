@@ -1,6 +1,6 @@
-import NavLinks from "@/components/NavLinks";
-import ProjectCard from "@/components/ProjectCard";
-import { fetchProjectById } from "@/app/lib/projects-db";
+import NavLinks from "@/app/components/NavLinks";
+import ProjectCard from "@/app/components/ProjectCard";
+import { fetchProjectById } from "@/app/lib/data";
 
 export default async function ProjectPage(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;

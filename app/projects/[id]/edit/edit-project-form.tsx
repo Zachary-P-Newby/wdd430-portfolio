@@ -1,6 +1,6 @@
 // app/projects/[id]/edit/page.tsx
 'use client';
-import { Project } from '@/app/lib/projects-db';
+import { Project } from '@/app/lib/data';
 import { useActionState } from 'react';
 import { updateProject, type State } from '@/app/lib/actions';
 

@@ -1,7 +1,7 @@
 
 import { Suspense } from "react"
 import EditProjectForm from "./edit-project-form"
-import { fetchProjectById } from "@/app/lib/projects-db";
+import { fetchProjectById } from "@/app/lib/data";
 import NotFound from "@/app/not-found";
 
 type Props = {

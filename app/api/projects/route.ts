@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import {getProjects, fetchFilteredProjects, fetchProjectsPages} from "../../lib/projects-db"
+import {getProjects, fetchFilteredProjects, fetchProjectsPages} from "../../lib/data"
 
 export async function GET(request: NextRequest) {
     

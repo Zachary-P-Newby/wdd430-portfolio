@@ -1,6 +1,6 @@
-import { ProjectSearch } from "@/components/ProjectSearch";
-import ProjectList from "../../components/ProjectList";
-import Pagination from "@/components/Pagination";
+import { ProjectSearch } from "@/app/components/ProjectSearch";
+import ProjectList from "../components/ProjectList";
+import Pagination from "@/app/components/Pagination";
 
 
 

@@ -1,4 +1,4 @@
-import FavouritesList from "../../components/FavouritesList";
+import FavouritesList from "../components/FavouritesList";
 import Image from "next/image";
 
 const favouriteVideoGames = [

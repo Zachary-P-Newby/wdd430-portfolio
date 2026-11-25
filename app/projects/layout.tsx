@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import NavLinks from "../../components/NavLinks"
+import NavLinks from "../components/NavLinks"
 
 export default function ProjectsLayout({children}: {children: React.ReactNode}){
     return (

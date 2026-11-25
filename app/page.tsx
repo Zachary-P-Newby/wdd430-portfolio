@@ -1,7 +1,7 @@
 //import Image from "next/image";
-import ProjectList from "../components/ProjectList";
+import ProjectList from "./components/ProjectList";
 
-import { Project } from "@/app/lib/projects-db";
+import { Project } from "@/app/lib/data";
 
 const projects: Project[] = [
   {
