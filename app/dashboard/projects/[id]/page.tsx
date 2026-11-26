@@ -1,13 +1,19 @@
 import NavLinks from "@/app/components/NavLinks";
 import ProjectCard from "@/app/components/ProjectCard";
 import { fetchProjectById } from "@/app/lib/data";
-import { generateMetadata } from "@/app/lib/metadata-generator";
+import { projectMetaDataGenerator } from "@/app/lib/metadata-generator";
 
+
+export async function generateMetadata(props: { params: Promise<{ id: string }> }){
+  const params = await props.params;
+  
+  return projectMetaDataGenerator(params.id);
+}
 export default async function ProjectPage(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
   const id = parseInt(params.id);
   const project = await fetchProjectById(id);
-  const metadata = generateMetadata(props);
+
 
   if (project) {
     

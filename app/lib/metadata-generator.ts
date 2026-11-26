@@ -2,12 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { fetchProjectById } from '@/app/lib/data';
 
-export type MetadataProps = {
-  params: Promise<{ id: string }>;
-};
 
-export async function generateMetadata({ params }: MetadataProps): Promise<Metadata> {
-  const { id } = await params;
+export async function projectMetaDataGenerator(id:string): Promise<Metadata> {
   const project = await fetchProjectById(parseInt(id));
 
   if (!project) {
