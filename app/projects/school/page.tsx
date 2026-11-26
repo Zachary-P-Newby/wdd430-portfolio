@@ -1,7 +1,11 @@
 import { Suspense } from "react";
 import ProjectList from "../../components/ProjectList";
 import { Project } from "@/app/lib/data";
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Open Source',
+};
 
 async function SchoolProjects(){
     const origin = process.env.VERCEL_URL

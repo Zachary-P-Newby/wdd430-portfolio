@@ -6,7 +6,12 @@ import bcrypt from 'bcryptjs';
 import { authConfig } from './auth.config';
 import { getUserByEmail } from './app/lib/data'; // your DB query function
 
-export const { auth, signIn, signOut } = NextAuth({
+export const {
+  handlers: { GET, POST },
+  auth,
+  signIn,
+  signOut,
+} = NextAuth({
   ...authConfig,
   providers: [
     Credentials({
@@ -14,16 +19,14 @@ export const { auth, signIn, signOut } = NextAuth({
         const parsed = z
           .object({ email: z.string().email(), password: z.string().min(6) })
           .safeParse(credentials);
-
         if (!parsed.success) return null;
-
         const { email, password } = parsed.data;
         const user = await getUserByEmail(email);
         if (!user) return null;
 
         const passwordsMatch = await bcrypt.compare(password, user.passwordHash);
         if (passwordsMatch) return user;
-
+        
         return null;
       },
     }),

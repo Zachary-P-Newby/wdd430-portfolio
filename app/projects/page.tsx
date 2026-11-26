@@ -2,7 +2,11 @@ import { ProjectSearch } from "@/app/components/ProjectSearch";
 import ProjectList from "../components/ProjectList";
 import Pagination from "@/app/components/Pagination";
 
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Projects',
+};
 
 
 export default async function Projects(props:{

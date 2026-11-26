@@ -77,3 +77,14 @@ export async function fetchProjectsPages(query: string) {
 }
 
 
+export async function getUserByEmail(query: string){
+  const search = `${query}`;
+
+  const result = await sql`
+    SELECT *
+    FROM users
+    WHERE email = ${search}
+  `;
+
+  return result.rows[0];
+}

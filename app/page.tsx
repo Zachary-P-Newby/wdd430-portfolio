@@ -10,6 +10,7 @@ const projects: Project[] = [
     description: "Top down arcade shooter based on Asteroids by Atari Inc, made in Godot for PC",
     type: "opensource",
     technologies: ["Godot","GDScript","PC"],
+    yearCompleted: 2023,
     link: "https://github.com/Zachary-P-Newby/CrudBusters"
   },
   {
@@ -18,6 +19,7 @@ const projects: Project[] = [
     description: "Webpage that helps users coordinate taveling by providing useful travel information such as weather, flights, and European hotels",
     type: "school",
     technologies: ["HTML","JavaScript","CSS"],
+    yearCompleted: 2026,
     link: "https://github.com/Zachary-P-Newby/TravelCoordinatorWDD330"
   },
   {
@@ -26,6 +28,7 @@ const projects: Project[] = [
     description: "Service Project webpage that helps users find service projects to volunteer for and provides information about the projects.",
     type: "school",
     technologies: ["HTML","JavaScript","PostgreSQL","Node.js","Express"],
+    yearCompleted: 2026,
     link: "https://github.com/Zachary-P-Newby/CSE340"
   }
 ]

@@ -1,5 +1,10 @@
 import ProjectList from "../../components/ProjectList";
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Open Source',
+};
 
 export default async function OpenSource(){
 //fetch data
